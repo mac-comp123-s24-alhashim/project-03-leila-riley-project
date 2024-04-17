@@ -9,13 +9,19 @@ We will be simulating a Pac-Man game consisting of a total of 5 different levels
 
 Plan:
 
-# 04/08 – Sketch/Illustration
-# 04/12 – Progress Presentation
-# 04/17 Demo Presentation
-# 04/22 Code, Report, Demo Video
-# 04/26 Project
-    ## Level 1 - Leila 
-    ## Level 2 - Riley
-    ## Level 3 - Leila
-    ## Level 4 - Riley
-    ## Final Level - Leila and Riley
+<<<<<<< Updated upstream
+## 04/12 – Progress Presentation
+## 04/17 Demo Presentation
+## 04/22 Code, Report, Demo Video
+## 04/26 Project
+    - Level 1 - Leila 
+    - Level 2 - Riley
+    - Level 3 - Leila
+    - Level 4 - Riley
+    - Final Level - Leila and Riley
+=======
+
+>>>>>>> Stashed changes
+
+Project Sketch:
+![CamScanner 04-10-2024 23.17(1)_1.jpg](images%2FCamScanner%2004-10-2024%2023.17%281%29_1.jpg)
