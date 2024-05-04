@@ -403,7 +403,7 @@ class Hero(MovableObject):
 
 
 class Ghost(MovableObject):
-    def __init__(self, in_surface, x, y, in_size: int, in_game_controller, sprite_path="images/ghost_fright.png"):
+    def __init__(self, in_surface, x, y, in_size: int, in_game_controller, sprite_path="images/ghost.png"):
         super().__init__(in_surface, x, y, in_size)
         self.game_controller = in_game_controller
         self.sprite_normal = pygame.image.load(sprite_path)
