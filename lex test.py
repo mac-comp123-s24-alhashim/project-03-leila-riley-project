@@ -265,7 +265,7 @@ class MovableObject(GameObject):
         self.last_working_direction = Direction.NONE
         self.location_queue = []
         self.next_target = None
-        self.image = pygame.image.load('images/ghost.png')
+        self.image = pygame.image.load('images/ghost_red.png')
 
     def get_next_location(self):
         return None if len(self.location_queue) == 0 else self.location_queue.pop(0)
@@ -316,8 +316,8 @@ class Hero(MovableObject):
     def __init__(self, in_surface, x, y, in_size: int):
         super().__init__(in_surface, x, y, in_size, (255, 255, 0), False)
         self.last_non_colliding_position = (0, 0)
-        self.open = pygame.image.load("images/pacmanopen.jpeg")
-        self.closed = pygame.image.load("images/ghost.png")
+        self.open = pygame.image.load("images/paku.png")
+        self.closed = pygame.image.load("images/man.png")
         self.image = self.open
         self.mouth_open = True
 
@@ -403,11 +403,11 @@ class Hero(MovableObject):
 
 
 class Ghost(MovableObject):
-    def __init__(self, in_surface, x, y, in_size: int, in_game_controller, sprite_path="images/ghost.png"):
+    def __init__(self, in_surface, x, y, in_size: int, in_game_controller, sprite_path="images/ghost_fright.png"):
         super().__init__(in_surface, x, y, in_size)
         self.game_controller = in_game_controller
         self.sprite_normal = pygame.image.load(sprite_path)
-        self.sprite_fright = pygame.image.load("images/ghost.png")
+        self.sprite_fright = pygame.image.load("images/ghost_fright.png")
 
     def reached_target(self):
         if (self.x, self.y) == self.next_target:
@@ -528,8 +528,8 @@ class PacmanGameController:
         self.ghost_colors = [
             "images/ghost_orange.png",
             "images/ghost_blue.png",
-            "images/ghost.png",
-            "images/ghost.png"
+            "images/ghost_red.png",
+            "images/ghost_pink.png"
         ]
         self.size = (0, 0)
         self.convert_maze_to_numpy()
