@@ -24,7 +24,7 @@ class GhostBehaviour(Enum):
     SCATTER = 2
 
 
-def translate_screen_to_maze(in_coords, in_size=32):
+def screen_maze_translation(in_coords, in_size=32):
     return int(in_coords[0] / in_size), int(in_coords[1] / in_size)
 
 
@@ -316,8 +316,8 @@ class Hero(MovableObject):
     def __init__(self, in_surface, x, y, in_size: int):
         super().__init__(in_surface, x, y, in_size, (255, 255, 0), False)
         self.last_non_colliding_position = (0, 0)
-        self.open = pygame.image.load("images/paku.png")
-        self.closed = pygame.image.load("images/man.png")
+        self.open = pygame.image.load("images/pakman1.png")
+        self.closed = pygame.image.load("images/pakman2.png")
         self.image = self.open
         self.mouth_open = True
 
@@ -441,8 +441,8 @@ class Ghost(MovableObject):
         return Direction.NONE
 
     def request_path_to_player(self, in_ghost):
-        player_position = translate_screen_to_maze(in_ghost._renderer.get_hero_position())
-        current_maze_coord = translate_screen_to_maze(in_ghost.get_position())
+        player_position = screen_maze_translation(in_ghost._renderer.get_hero_position())
+        current_maze_coord = screen_maze_translation(in_ghost.get_position())
         path = self.game_controller.p.get_path(current_maze_coord[1], current_maze_coord[0], player_position[1],
                                                player_position[0])
 
@@ -537,7 +537,7 @@ class PacmanGameController:
 
     def request_new_random_path(self, in_ghost: Ghost):
         random_space = random.choice(self.reachable_spaces)
-        current_maze_coord = translate_screen_to_maze(in_ghost.get_position())
+        current_maze_coord = screen_maze_translation(in_ghost.get_position())
 
         path = self.p.get_path(current_maze_coord[1], current_maze_coord[0], random_space[1],
                                random_space[0])
