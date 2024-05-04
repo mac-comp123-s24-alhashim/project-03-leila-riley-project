@@ -39,3 +39,18 @@ It initializes the game window, sets up the maze, and manages game objects. The 
 and power-ups while avoiding ghosts. The behavior of ghosts changes based on the game mode, which alternates between chasing Pacman and scattering. 
 Additionally, there's a special power-up (Kokoro) that temporarily changes ghost behavior. The game controller (PacmanGameController) sets up the maze, 
 manages pathfinding for ghosts, and controls game events. Overall, this code provides the foundation for a functioning Pacman game in Python using Pygame.
+
+# Requirements to run the software: 
+Python 3.x 
+Pygame library Numpy library tcod library 
+# How to run the software: 
+Ensure you have Python installed on your system. Install the required libraries using pip: Copy code pip install pygame numpy tcod Download the code and any 
+required assets (such as images). Run the Python script containing the Pacman game code. 
+# Known limitations: 
+The game may lack advanced features found in commercial Pacman games. 
+There might be minor bugs or unexpected behavior due to the complexity of game development.
+
+# Resources referenced while developing the software: 
+Pygame documentation: https://www.pygame.org/docs/ 
+Numpy documentation: https://numpy.org/doc/ 
+tcod documentation: https://python-tcod.readthedocs.io/en/latest/
