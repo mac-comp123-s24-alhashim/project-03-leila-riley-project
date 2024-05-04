@@ -316,7 +316,7 @@ class Hero(MovableObject):
     def __init__(self, in_surface, x, y, in_size: int):
         super().__init__(in_surface, x, y, in_size, (255, 255, 0), False)
         self.last_non_colliding_position = (0, 0)
-        self.open = pygame.image.load("images/ghost.png")
+        self.open = pygame.image.load("images/pacmanopen.jpeg")
         self.closed = pygame.image.load("images/ghost.png")
         self.image = self.open
         self.mouth_open = True
@@ -526,8 +526,8 @@ class PacmanGameController:
         self.reachable_spaces = []
         self.ghost_spawns = []
         self.ghost_colors = [
-            "images/ghost.png",
-            "images/ghost.png",
+            "images/ghost_orange.png",
+            "images/ghost_blue.png",
             "images/ghost.png",
             "images/ghost.png"
         ]
