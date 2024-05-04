@@ -316,8 +316,8 @@ class Hero(MovableObject):
     def __init__(self, in_surface, x, y, in_size: int):
         super().__init__(in_surface, x, y, in_size, (255, 255, 0), False)
         self.last_non_colliding_position = (0, 0)
-        self.open = pygame.image.load("images/paku.png")
-        self.closed = pygame.image.load("images/man.png")
+        self.open = pygame.image.load("images/ghost.png")
+        self.closed = pygame.image.load("images/ghost.png")
         self.image = self.open
         self.mouth_open = True
 
@@ -407,7 +407,7 @@ class Ghost(MovableObject):
         super().__init__(in_surface, x, y, in_size)
         self.game_controller = in_game_controller
         self.sprite_normal = pygame.image.load(sprite_path)
-        self.sprite_fright = pygame.image.load("images/ghost_fright.png")
+        self.sprite_fright = pygame.image.load("images/ghost.png")
 
     def reached_target(self):
         if (self.x, self.y) == self.next_target:
@@ -527,9 +527,9 @@ class PacmanGameController:
         self.ghost_spawns = []
         self.ghost_colors = [
             "images/ghost.png",
-            "images/ghost_pink.png",
-            "images/ghost_orange.png",
-            "images/ghost_blue.png"
+            "images/ghost.png",
+            "images/ghost.png",
+            "images/ghost.png"
         ]
         self.size = (0, 0)
         self.convert_maze_to_numpy()
