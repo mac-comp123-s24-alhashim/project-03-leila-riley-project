@@ -40,6 +40,9 @@ and power-ups while avoiding ghosts. The behavior of ghosts changes based on the
 Additionally, there's a special power-up (Kokoro) that temporarily changes ghost behavior. The game controller (PacmanGameController) sets up the maze, 
 manages pathfinding for ghosts, and controls game events. Overall, this code provides the foundation for a functioning Pacman game in Python using Pygame.
 
+![](/Users/rileyferidegulrukaratas/Desktop/Screenshot 2024-05-04 at 9.34.05 PM.png) This image can also be found as "softwaremainwindow"
+[](https://drive.google.com/file/d/1dWMiecRtKT3lG0qjt3rge1ejtPncCKAF/view?usp=sharing) The link to the demo video is on the left
+
 # Requirements to run the software: 
 Python 3.x 
 Pygame library Numpy library tcod library 
