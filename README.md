@@ -41,7 +41,6 @@ Additionally, there's a special power-up (Kokoro) that temporarily changes ghost
 manages pathfinding for ghosts, and controls game events. Overall, this code provides the foundation for a functioning Pacman game in Python using Pygame.
 
 ![](/Users/rileyferidegulrukaratas/Desktop/Screenshot 2024-05-04 at 9.34.05 PM.png) This image can also be found as "softwaremainwindow"
-[](https://drive.google.com/file/d/1dWMiecRtKT3lG0qjt3rge1ejtPncCKAF/view?usp=sharing) The link to the demo video is on the left
 
 # Requirements to run the software: 
 Python 3.x 
@@ -57,3 +56,6 @@ There might be minor bugs or unexpected behavior due to the complexity of game d
 Pygame documentation: https://www.pygame.org/docs/ 
 Numpy documentation: https://numpy.org/doc/ 
 tcod documentation: https://python-tcod.readthedocs.io/en/latest/
+
+# Demo Video
+[](https://drive.google.com/file/d/1dWMiecRtKT3lG0qjt3rge1ejtPncCKAF/view?usp=sharing)
