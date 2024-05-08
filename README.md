@@ -58,5 +58,5 @@ Numpy documentation: https://numpy.org/doc/
 tcod documentation: https://python-tcod.readthedocs.io/en/latest/
 
 # Demo Video
-[](https://drive.google.com/file/d/1dWMiecRtKT3lG0qjt3rge1ejtPncCKAF/view?usp=sharing)
-on youtube [](https://youtu.be/eR2ygnNc_HM)
+(https://drive.google.com/file/d/1dWMiecRtKT3lG0qjt3rge1ejtPncCKAF/view?usp=sharing)
+on youtube (https://youtu.be/eR2ygnNc_HM)
